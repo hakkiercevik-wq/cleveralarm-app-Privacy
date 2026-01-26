@@ -1,96 +1,96 @@
-﻿# Gizlilik Politikas─▒
+# Gizlilik Politikası
 
-**Son G├╝ncelleme: 26 Ocak 2026**
+**Son Güncelleme: 26 Ocak 2026**
 
-## CleverAlarm Uygulamas─▒
+## CleverAlarm Uygulaması
 
-### Genel Bak─▒┼ş
+### Genel Bakış
 
-CleverAlarm uygulamas─▒, gizlili─şinize ├Ânem verir. Uygulama temel alarm ve matematik ├Âzelliklerinde ├ğevrimd─▒┼ş─▒ ├ğal─▒┼ş─▒r ve ki┼şisel verilerinizi kendi sunucular─▒m─▒za g├Ândermeyiz.
+CleverAlarm uygulaması, gizliliğinize önem verir. Uygulama temel alarm ve matematik özelliklerinde çevrimdışı çalışır ve kişisel verilerinizi kendi sunucularımıza göndermeyiz.
 
 ### Veri Toplama
 
-**Bu uygulama hi├ğbir ki┼şisel veri toplamaz.**
+**Bu uygulama hiçbir kişisel veri toplamaz.**
 
-Uygulaman─▒n kulland─▒─ş─▒ t├╝m veriler yaln─▒zca cihaz─▒n─▒zda yerel olarak saklan─▒r ve asla internete g├Ânderilmez:
+Uygulamanın kullandığı tüm veriler yalnızca cihazınızda yerel olarak saklanır ve asla internete gönderilmez:
 
-- ÔÅ░ Alarm ayarlar─▒n─▒z (saat, g├╝nler, etiket)
-- ­şöö Ses tercihleri (zil sesi se├ğimi, ses seviyesi)
-- ­şğ« Matematik soru ayarlar─▒ (soru say─▒s─▒, zorluk seviyesi)
-- ­şÄ¿ G├Âr├╝n├╝m tercihi (karanl─▒k/ayd─▒nl─▒k tema)
-- Ô£à Alarm aktif/pasif durumlar─▒
+- ⏰ Alarm ayarlarınız (saat, günler, etiket)
+- 🔔 Ses tercihleri (zil sesi seçimi, ses seviyesi)
+- 🧮 Matematik soru ayarları (soru sayısı, zorluk seviyesi)
+- 🎨 Görünüm tercihi (karanlık/aydınlık tema)
+- ✅ Alarm aktif/pasif durumları
 
-Bu bilgilerin tamam─▒ yaln─▒zca cihaz─▒n─▒zda SharedPreferences kullan─▒larak saklan─▒r ve cihaz─▒n─▒zdan ├ğ─▒kmaz.
+Bu bilgilerin tamamı yalnızca cihazınızda SharedPreferences kullanılarak saklanır ve cihazınızdan çıkmaz.
 
-### ─░nternet Ba─şlant─▒s─▒
+### İnternet Bağlantısı
 
-ÔÜá´©Å Bu uygulama reklamlar ve sat─▒n alma do─şrulamas─▒ i├ğin internet ba─şlant─▒s─▒ kullan─▒r.
+⚠️ Bu uygulama reklamlar ve satın alma doğrulaması için internet bağlantısı kullanır.
 
-Ô£à Alarm ayarlar─▒n─▒z internet gerektirmez ve ├ğevrimd─▒┼ş─▒ ├ğal─▒┼ş─▒r.
+✅ Alarm ayarlarınız internet gerektirmez ve çevrimdışı çalışır.
 
-Ô£à Hi├ğbir sunucuya ki┼şisel veri g├Ândermez.
+✅ Hiçbir sunucuya kişisel veri göndermez.
 
-### ├£├ğ├╝nc├╝ Taraf Hizmetler
+### Üçüncü Taraf Hizmetler
 
-Bu uygulama a┼şa─ş─▒daki Google servislerini kullanabilir:
+Bu uygulama aşağıdaki Google servislerini kullanabilir:
 
-- Ô£à **Google AdMob**: Uygulama i├ği reklamlar─▒ g├Âstermek i├ğin kullan─▒l─▒r.
-  - Reklam g├Âsterimleri/t─▒klamalar─▒ ile ilgili ├Âl├ğ├╝mler yap─▒labilir
-  - Cihaz t├╝r├╝, i┼şletim sistemi, IP adresi gibi teknik bilgiler i┼şlenebilir
-  - Ki┼şiselle┼ştirilmi┼ş reklamlar i├ğin reklam kimli─şi (Advertising ID) kullan─▒labilir
-  - Google'un gizlilik politikas─▒: https://policies.google.com/privacy
+- ✅ **Google AdMob**: Uygulama içi reklamları göstermek için kullanılır.
+  - Reklam gösterimleri/tıklamaları ile ilgili ölçümler yapılabilir
+  - Cihaz türü, işletim sistemi, IP adresi gibi teknik bilgiler işlenebilir
+  - Kişiselleştirilmiş reklamlar için reklam kimliği (Advertising ID) kullanılabilir
+  - Google'un gizlilik politikası: https://policies.google.com/privacy
 
-- Ô£à **Google Play Billing (Sat─▒n Alma)**: ÔÇ£Reklamlar─▒ Kald─▒rÔÇØ sat─▒n al─▒m─▒n─▒ yapmak ve sat─▒n al─▒m─▒ geri y├╝klemek i├ğin kullan─▒l─▒r.
-  - Sat─▒n alma i┼şlemleri Google Play ├╝zerinden y├╝r├╝t├╝l├╝r
-  - Sat─▒n alma durumunun (sat─▒n al─▒nd─▒/geri y├╝klendi) cihazda saklanmas─▒ i├ğin yerel kay─▒t tutulur
-  - Google'un gizlilik politikas─▒: https://policies.google.com/privacy
+- ✅ **Google Play Billing (Satın Alma)**: “Reklamları Kaldır” satın alımını yapmak ve satın alımı geri yüklemek için kullanılır.
+  - Satın alma işlemleri Google Play üzerinden yürütülür
+  - Satın alma durumunun (satın alındı/geri yüklendi) cihazda saklanması için yerel kayıt tutulur
+  - Google'un gizlilik politikası: https://policies.google.com/privacy
 
-Di─şer hizmetler **KULLANILMAZ**:
+Diğer hizmetler **KULLANILMAZ**:
 
-- ÔØî Analitik servisleri (Google Analytics, Firebase, vb.)
-- ÔØî ├ç├Âkme raporu servisleri
-- ÔØî Sosyal medya entegrasyonlar─▒
-- ÔØî Kullan─▒c─▒ takip ara├ğlar─▒
+- ❌ Analitik servisleri (Google Analytics, Firebase, vb.)
+- ❌ Çökme raporu servisleri
+- ❌ Sosyal medya entegrasyonları
+- ❌ Kullanıcı takip araçları
 
-### ─░zinler
+### İzinler
 
-Uygulama ┼şu izinleri kullan─▒r:
+Uygulama şu izinleri kullanır:
 
-1. **Bildirim ─░zni**: Alarm zaman─▒ geldi─şinde sizi uyarmak i├ğin
-2. **Tam Ekran Alarm ─░zni**: Alarm ├ğald─▒─ş─▒nda matematik ekran─▒n─▒ otomatik a├ğmak i├ğin
-3. **Alarm/Zamanlay─▒c─▒ ─░zni**: Belirledi─şiniz saatlerde alarm kurmak i├ğin
-4. **─░nternet ─░zni**: Reklamlar─▒ y├╝klemek i├ğin
+1. **Bildirim İzni**: Alarm zamanı geldiğinde sizi uyarmak için
+2. **Tam Ekran Alarm İzni**: Alarm çaldığında matematik ekranını otomatik açmak için
+3. **Alarm/Zamanlayıcı İzni**: Belirlediğiniz saatlerde alarm kurmak için
+4. **İnternet İzni**: Reklamları yüklemek için
 
-Sat─▒n alma ├Âzelli─şi kullan─▒ld─▒─ş─▒nda, Google Play altyap─▒s─▒ ile ileti┼şim kurulabilir.
+Satın alma özelliği kullanıldığında, Google Play altyapısı ile iletişim kurulabilir.
 
-Bu izinler yaln─▒zca uygulaman─▒n temel i┼şlevselli─şi i├ğin kullan─▒l─▒r. Alarm ayarlar─▒n─▒z gibi ki┼şisel verileriniz hi├ğbir zaman internete g├Ânderilmez.
+Bu izinler yalnızca uygulamanın temel işlevselliği için kullanılır. Alarm ayarlarınız gibi kişisel verileriniz hiçbir zaman internete gönderilmez.
 
-### Veri G├╝venli─şi
+### Veri Güvenliği
 
-T├╝m verileriniz cihaz─▒n─▒zda yerel olarak sakland─▒─ş─▒ i├ğin, veri g├╝venli─şi tamamen cihaz─▒n─▒z─▒n g├╝venlik ayarlar─▒na ba─şl─▒d─▒r. Uygulamay─▒ kald─▒rd─▒─ş─▒n─▒zda t├╝m veriler otomatik olarak silinir.
+Tüm verileriniz cihazınızda yerel olarak saklandığı için, veri güvenliği tamamen cihazınızın güvenlik ayarlarına bağlıdır. Uygulamayı kaldırdığınızda tüm veriler otomatik olarak silinir.
 
-### ├çocuklar─▒n Gizlili─şi
+### Çocukların Gizliliği
 
-Bu uygulama her ya┼ştan kullan─▒c─▒ i├ğin uygundur. Hi├ğbir ya┼ş grubu i├ğin ├Âzel veri toplama yap─▒lmaz ├ğ├╝nk├╝ uygulama hi├ğbir veri toplamaz.
+Bu uygulama her yaştan kullanıcı için uygundur. Hiçbir yaş grubu için özel veri toplama yapılmaz çünkü uygulama hiçbir veri toplamaz.
 
-### De─şi┼şiklikler
+### Değişiklikler
 
-Bu gizlilik politikas─▒ gerekti─şinde g├╝ncellenebilir. Herhangi bir de─şi┼şiklik durumunda, g├╝ncelleme tarihi bu sayfada belirtilecektir.
+Bu gizlilik politikası gerektiğinde güncellenebilir. Herhangi bir değişiklik durumunda, güncelleme tarihi bu sayfada belirtilecektir.
 
-### ─░leti┼şim
+### İletişim
 
-Gizlilik politikas─▒ hakk─▒nda sorular─▒n─▒z varsa, l├╝tfen uygulama geli┼ştirici ile ileti┼şime ge├ğin.
+Gizlilik politikası hakkında sorularınız varsa, lütfen uygulama geliştirici ile iletişime geçin.
 
-Destek e-postas─▒: mathalarmdestek@gmail.com
+Destek e-postası: mathalarmdestek@gmail.com
 
 ---
 
-**├ûzetle:**
-- Ô£à Alarm ayarlar─▒n─▒z tamamen ├ğevrimd─▒┼ş─▒ ├ğal─▒┼ş─▒r
-- Ô£à Ki┼şisel verileriniz hi├ğbir zaman internete g├Ânderilmez
-- ÔÜá´©Å Reklamlar i├ğin Google AdMob kullan─▒l─▒r
-- ÔÜá´©Å Reklamlar─▒ kald─▒rma sat─▒n al─▒m─▒ i├ğin Google Play Billing kullan─▒labilir
-- Ô£à T├╝m alarm verileriniz sadece cihaz─▒n─▒zda
-- Ô£à Gizlili─şinizi korur
+**Özetle:**
+- ✅ Alarm ayarlarınız tamamen çevrimdışı çalışır
+- ✅ Kişisel verileriniz hiçbir zaman internete gönderilmez
+- ⚠️ Reklamlar için Google AdMob kullanılır
+- ⚠️ Reklamları kaldırma satın alımı için Google Play Billing kullanılabilir
+- ✅ Tüm alarm verileriniz sadece cihazınızda
+- ✅ Gizliliğinizi korur
 
-**G├Ân├╝l rahatl─▒─ş─▒yla kullanabilirsiniz!** ­şöÆ
+**Gönül rahatlığıyla kullanabilirsiniz!** 🔒
