@@ -1,6 +1,6 @@
 # Gizlilik Politikası
 
-**Son Güncelleme: 26 Ocak 2026**
+**Son Güncelleme: 3 Şubat 2026**
 
 ## CleverAlarm Uygulaması
 
@@ -10,17 +10,27 @@ CleverAlarm uygulaması, gizliliğinize önem verir. Uygulama temel alarm ve mat
 
 ### Veri Toplama
 
-**Bu uygulama hiçbir kişisel veri toplamaz.**
+Uygulamanın kendisi bir kullanıcı hesabı oluşturmaz ve kendi sunucularımıza kişisel verilerinizi göndermeyiz.
 
-Uygulamanın kullandığı tüm veriler yalnızca cihazınızda yerel olarak saklanır ve asla internete gönderilmez:
+Ancak uygulama, **reklam** ve **satın alma** özellikleri için Google hizmetlerini kullandığından, bu üçüncü taraflar kendi gizlilik politikalarına göre bazı teknik verileri işleyebilir (aşağıda detaylı).
+
+Uygulamanın kullandığı ve **cihazınızda yerel olarak** saklanan veriler şunlardır:
 
 - ⏰ Alarm ayarlarınız (saat, günler, etiket)
 - 🔔 Ses tercihleri (zil sesi seçimi, ses seviyesi)
 - 🧮 Matematik soru ayarları (soru sayısı, zorluk seviyesi)
+- 🧠 Hafıza (Memory) görevi ayarları (örn. eş/kart sayısı)
+- 🔁 Sıra Takibi (Sequence) görevi ayarları (örn. tur sayısı, sıra uzunluğu)
+- 🚶 Adım görevi ayarları (ör. hedef adım sayısı)
 - 🎨 Görünüm tercihi (karanlık/aydınlık tema)
 - ✅ Alarm aktif/pasif durumları
+- 🛒 “Reklamları kaldır” satın alma durum bilgisi (satın alındı/geri yüklendi)
 
 Bu bilgilerin tamamı yalnızca cihazınızda SharedPreferences kullanılarak saklanır ve cihazınızdan çıkmaz.
+
+**Adım verileri (Steps/Adım görevi):** Uygulama, adım sayacı/ivmeölçer gibi cihaz sensörlerinden gelen adım bilgisini yalnızca alarm kapatma görevi için kullanır. Adım sayısı uygulama içinde işlenir ve uygulamanın kendi sunucularına gönderilmez.
+
+**Özel zil sesi:** İsterseniz cihazınızdan bir ses dosyası seçebilirsiniz. Uygulama, seçtiğiniz dosyanın yolunu/kimliğini yerel olarak kaydedebilir ve alarm çalarken o dosyayı kullanabilir. Bu dosya içeriği uygulama tarafından internete yüklenmez.
 
 ### İnternet Bağlantısı
 
@@ -28,7 +38,7 @@ Bu bilgilerin tamamı yalnızca cihazınızda SharedPreferences kullanılarak sa
 
 ✅ Alarm ayarlarınız internet gerektirmez ve çevrimdışı çalışır.
 
-✅ Hiçbir sunucuya kişisel veri göndermez.
+✅ Uygulamanın kendi sunucularına kişisel veri göndermez.
 
 ### Üçüncü Taraf Hizmetler
 
@@ -36,8 +46,8 @@ Bu uygulama aşağıdaki Google servislerini kullanabilir:
 
 - ✅ **Google AdMob**: Uygulama içi reklamları göstermek için kullanılır.
   - Reklam gösterimleri/tıklamaları ile ilgili ölçümler yapılabilir
-  - Cihaz türü, işletim sistemi, IP adresi gibi teknik bilgiler işlenebilir
-  - Kişiselleştirilmiş reklamlar için reklam kimliği (Advertising ID) kullanılabilir
+  - Cihaz türü, işletim sistemi, IP adresi, yaklaşık konum (IP’den türetilebilir) gibi teknik bilgiler işlenebilir
+  - Kişiselleştirilmiş reklamlar için reklam kimliği (Advertising ID) kullanılabilir (cihaz ayarlarından sınırlandırılabilir)
   - Google'un gizlilik politikası: https://policies.google.com/privacy
 
 - ✅ **Google Play Billing (Satın Alma)**: “Reklamları Kaldır” satın alımını yapmak ve satın alımı geri yüklemek için kullanılır.
@@ -61,7 +71,14 @@ Uygulama şu izinleri kullanır:
 3. **Alarm/Zamanlayıcı İzni**: Belirlediğiniz saatlerde alarm kurmak için
 4. **İnternet İzni**: Reklamları yüklemek için
 
-Satın alma özelliği kullanıldığında, Google Play altyapısı ile iletişim kurulabilir.
+Opsiyonel/özelliğe bağlı izinler:
+
+5. **Hareket/Fiziksel Aktivite (Adım sayma) İzni**: “Adım” kapatma görevi seçildiğinde adım sayısını okuyabilmek için (Android: ACTIVITY_RECOGNITION, iOS: Motion & Fitness)
+6. **Dosya Seçme/Medya Erişimi**: Özel zil sesi seçmek istediğinizde sistem dosya seçicisini açmak için (dosya seçimi tamamen sizin kontrolünüzdedir)
+
+**Hafıza (Memory)** ve **Sıra Takibi (Sequence)** görevleri ek bir cihaz izni gerektirmez; yalnızca uygulama içinde çalışır.
+
+Not: Satın alma özelliği kullanıldığında Google Play altyapısı ile iletişim kurulabilir.
 
 Bu izinler yalnızca uygulamanın temel işlevselliği için kullanılır. Alarm ayarlarınız gibi kişisel verileriniz hiçbir zaman internete gönderilmez.
 
@@ -71,7 +88,9 @@ Tüm verileriniz cihazınızda yerel olarak saklandığı için, veri güvenliğ
 
 ### Çocukların Gizliliği
 
-Bu uygulama her yaştan kullanıcı için uygundur. Hiçbir yaş grubu için özel veri toplama yapılmaz çünkü uygulama hiçbir veri toplamaz.
+Bu uygulama her yaştan kullanıcı tarafından kullanılabilir. Uygulama kendi sunucularına kişisel veri göndermez.
+
+Ancak uygulamada reklam gösterimi (Google AdMob) bulunabilir. Google, reklam sunumu sırasında kendi politikalarına göre bazı teknik verileri işleyebilir. Çocukların gizliliği hakkında daha fazla bilgi için Google gizlilik politikasını inceleyebilirsiniz: https://policies.google.com/privacy
 
 ### Değişiklikler
 
@@ -87,10 +106,11 @@ Destek e-postası: mathalarmdestek@gmail.com
 
 **Özetle:**
 - ✅ Alarm ayarlarınız tamamen çevrimdışı çalışır
-- ✅ Kişisel verileriniz hiçbir zaman internete gönderilmez
+- ✅ Uygulamanın kendi sunucularına kişisel veriler gönderilmez
 - ⚠️ Reklamlar için Google AdMob kullanılır
 - ⚠️ Reklamları kaldırma satın alımı için Google Play Billing kullanılabilir
 - ✅ Tüm alarm verileriniz sadece cihazınızda
-- ✅ Gizliliğinizi korur
+- ✅ Adım görevi verileri cihazda işlenir
+- ✅ Gizliliğinizi korumaya odaklanır
 
 **Gönül rahatlığıyla kullanabilirsiniz!** 🔒
