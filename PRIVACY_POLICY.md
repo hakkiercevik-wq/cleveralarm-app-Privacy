@@ -1,6 +1,6 @@
 # Gizlilik Politikası
 
-**Son Güncelleme: 3 Şubat 2026**
+**Son Güncelleme: 9 Şubat 2026**
 
 ## CleverAlarm Uygulaması
 
@@ -25,8 +25,15 @@ Uygulamanın kullandığı ve **cihazınızda yerel olarak** saklanan veriler ş
 - 🎨 Görünüm tercihi (karanlık/aydınlık tema)
 - ✅ Alarm aktif/pasif durumları
 - 🛒 “Reklamları kaldır” satın alma durum bilgisi (satın alındı/geri yüklendi)
+- 🖼️ Alarm ekranı duvar kağıdı tercihi (seçilen duvar kağıdının dosya yolu veya uygulama içi hazır görsel seçimi)
 
 Bu bilgilerin tamamı yalnızca cihazınızda SharedPreferences kullanılarak saklanır ve cihazınızdan çıkmaz.
+
+**Duvar kağıdı (alarm ekranı arka planı):** Uygulama, isterseniz cihazınızdan bir görsel seçmenize ve kırpmanıza (crop) izin verir. Seçtiğiniz görsel, yalnızca uygulamanın çalışabilmesi için uygulamanın kendi yerel depolama alanına kopyalanabilir ve bu kopyanın yolu cihazınızda saklanır. Görselin kendisi uygulama tarafından internete yüklenmez ve uygulamanın kendi sunucularına gönderilmez.
+
+Notlar:
+- Fotoğraf/galeri erişimi, sistemin dosya seçicisi üzerinden ve yalnızca sizin seçtiğiniz dosya ile sınırlıdır.
+- Uygulamayı kaldırdığınızda uygulama depolama alanındaki bu görseller de silinir.
 
 **Adım verileri (Steps/Adım görevi):** Uygulama, adım sayacı/ivmeölçer gibi cihaz sensörlerinden gelen adım bilgisini yalnızca alarm kapatma görevi için kullanır. Adım sayısı uygulama içinde işlenir ve uygulamanın kendi sunucularına gönderilmez.
 
@@ -35,6 +42,8 @@ Bu bilgilerin tamamı yalnızca cihazınızda SharedPreferences kullanılarak sa
 ### İnternet Bağlantısı
 
 ⚠️ Bu uygulama reklamlar ve satın alma doğrulaması için internet bağlantısı kullanır.
+
+⚠️ Uygulama içindeki “Gizlilik Politikası” sayfası, GitHub üzerinde barındırılan bir dokümanı uygulama içinde görüntüler. Bu sayfayı açtığınızda GitHub/Google gibi altyapı sağlayıcıları standart web sunucu günlükleri kapsamında bazı teknik verileri (örn. IP adresi, cihaz bilgisi, istek zamanı) işleyebilir.
 
 ✅ Alarm ayarlarınız internet gerektirmez ve çevrimdışı çalışır.
 
@@ -100,13 +109,14 @@ Bu gizlilik politikası gerektiğinde güncellenebilir. Herhangi bir değişikli
 
 Gizlilik politikası hakkında sorularınız varsa, lütfen uygulama geliştirici ile iletişime geçin.
 
-Destek e-postası: mathalarmdestek@gmail.com
+Destek e-postası: cleveralarmdestek@gmail.com
 
 ---
 
 **Özetle:**
 - ✅ Alarm ayarlarınız tamamen çevrimdışı çalışır
 - ✅ Uygulamanın kendi sunucularına kişisel veriler gönderilmez
+- ✅ Duvar kağıdı (alarm ekranı arka planı) seçiminiz cihazınızda saklanır ve internete yüklenmez
 - ⚠️ Reklamlar için Google AdMob kullanılır
 - ⚠️ Reklamları kaldırma satın alımı için Google Play Billing kullanılabilir
 - ✅ Tüm alarm verileriniz sadece cihazınızda
