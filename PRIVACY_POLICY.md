@@ -1,126 +1,148 @@
 # Gizlilik Politikası
 
-**Son Güncelleme: 9 Şubat 2026**
+**Son Güncelleme: 1 Mart 2026**
 
 ## CleverAlarm Uygulaması
 
 ### Genel Bakış
 
-CleverAlarm uygulaması, gizliliğinize önem verir. Uygulama temel alarm ve matematik özelliklerinde çevrimdışı çalışır ve kişisel verilerinizi kendi sunucularımıza göndermeyiz.
+CleverAlarm uygulaması, gizliliğinize önem verir. Uygulamanın temel alarm ve görev (matematik, hafıza, sıra, adım vb.) özellikleri büyük ölçüde çevrimdışı çalışır. Uygulama **kendi sunucularımıza** kişisel verilerinizi göndermez.
 
-### Veri Toplama
+Bu uygulama bazı özellikler için üçüncü taraf servisler (ör. Google AdMob, Google Play satın alma/güncelleme/yorum) kullanabilir. Bu servisler kendi gizlilik politikaları kapsamında **teknik veriler** işleyebilir (aşağıda).
 
-Uygulamanın kendisi bir kullanıcı hesabı oluşturmaz ve kendi sunucularımıza kişisel verilerinizi göndermeyiz.
+### Veri Toplama ve Yerel Saklama
 
-Ancak uygulama, **reklam** ve **satın alma** özellikleri için Google hizmetlerini kullandığından, bu üçüncü taraflar kendi gizlilik politikalarına göre bazı teknik verileri işleyebilir (aşağıda detaylı).
+Uygulama bir kullanıcı hesabı oluşturmaz.
 
-Uygulamanın kullandığı ve **cihazınızda yerel olarak** saklanan veriler şunlardır:
+Uygulamanın kullandığı ve **cihazınızda yerel olarak** saklanan veriler (uygulamanın çalışması için gereken ayarlar) şunlardır:
 
 - ⏰ Alarm ayarlarınız (saat, günler, etiket)
-- 🔔 Ses tercihleri (zil sesi seçimi, ses seviyesi)
+- 🔔 Ses tercihleri (seçilen zil sesi/sistem alarm sesi, ses seviyesi)
 - 🧮 Matematik soru ayarları (soru sayısı, zorluk seviyesi)
 - 🧠 Hafıza (Memory) görevi ayarları (örn. eş/kart sayısı)
 - 🔁 Sıra Takibi (Sequence) görevi ayarları (örn. tur sayısı, sıra uzunluğu)
-- 🚶 Adım görevi ayarları (ör. hedef adım sayısı)
+- 🚶 Adım görevi ayarları (örn. hedef adım sayısı)
 - 🎨 Görünüm tercihi (karanlık/aydınlık tema)
 - ✅ Alarm aktif/pasif durumları
 - 🛒 “Reklamları kaldır” satın alma durum bilgisi (satın alındı/geri yüklendi)
 - 🖼️ Alarm ekranı duvar kağıdı tercihi (seçilen duvar kağıdının dosya yolu veya uygulama içi hazır görsel seçimi)
 
-Bu bilgilerin tamamı yalnızca cihazınızda SharedPreferences kullanılarak saklanır ve cihazınızdan çıkmaz.
+Bu bilgilerin tamamı yalnızca cihazınızda (örn. SharedPreferences ve uygulama içi yerel dosyalar) saklanır.
 
-**Duvar kağıdı (alarm ekranı arka planı):** Uygulama, isterseniz cihazınızdan bir görsel seçmenize ve kırpmanıza (crop) izin verir. Seçtiğiniz görsel, yalnızca uygulamanın çalışabilmesi için uygulamanın kendi yerel depolama alanına kopyalanabilir ve bu kopyanın yolu cihazınızda saklanır. Görselin kendisi uygulama tarafından internete yüklenmez ve uygulamanın kendi sunucularına gönderilmez.
+**Duvar kağıdı (alarm ekranı arka planı):** Uygulama, isterseniz cihazınızdan bir görsel seçmenize ve kırpmanıza (crop) izin verir. Seçtiğiniz görsel, yalnızca uygulamanın çalışabilmesi için uygulamanın kendi yerel depolama alanına kopyalanabilir ve bu kopyanın yolu cihazınızda saklanır. Görsel uygulama tarafından internete yüklenmez ve uygulamanın kendi sunucularına gönderilmez.
 
 Notlar:
 - Fotoğraf/galeri erişimi, sistemin dosya seçicisi üzerinden ve yalnızca sizin seçtiğiniz dosya ile sınırlıdır.
 - Uygulamayı kaldırdığınızda uygulama depolama alanındaki bu görseller de silinir.
 
-**Adım verileri (Steps/Adım görevi):** Uygulama, adım sayacı/ivmeölçer gibi cihaz sensörlerinden gelen adım bilgisini yalnızca alarm kapatma görevi için kullanır. Adım sayısı uygulama içinde işlenir ve uygulamanın kendi sunucularına gönderilmez.
+**Adım verileri (Steps/Adım görevi):** Uygulama, cihaz sensörlerinden gelen adım bilgisini yalnızca alarm kapatma görevi için kullanır. Adım verisi uygulama içinde işlenir ve uygulamanın kendi sunucularına gönderilmez.
 
-**Özel zil sesi:** İsterseniz cihazınızdan bir ses dosyası seçebilirsiniz. Uygulama, seçtiğiniz dosyanın yolunu/kimliğini yerel olarak kaydedebilir ve alarm çalarken o dosyayı kullanabilir. Bu dosya içeriği uygulama tarafından internete yüklenmez.
+**Zil sesi / sistem alarm sesleri:**
+- **Özel zil sesi** seçerseniz, yalnızca sizin seçtiğiniz ses dosyası kullanılabilir ve gerekli olduğunda uygulamanın yerel depolama alanına kopyalanabilir.
+- **Sistem alarm sesleri** listesini görüntülediğinizde, Android’in sistem zil sesi listesindeki alarm seslerine ait başlık/URI gibi bilgiler uygulama içinde gösterilir.
+
+Bu ses dosyaları uygulama tarafından internete yüklenmez.
 
 ### İnternet Bağlantısı
 
-⚠️ Bu uygulama reklamlar ve satın alma doğrulaması için internet bağlantısı kullanır.
+⚠️ Bu uygulama aşağıdaki durumlarda internet bağlantısı kullanabilir:
 
-⚠️ Uygulama içindeki “Gizlilik Politikası” sayfası, GitHub üzerinde barındırılan bir dokümanı uygulama içinde görüntüler. Bu sayfayı açtığınızda GitHub/Google gibi altyapı sağlayıcıları standart web sunucu günlükleri kapsamında bazı teknik verileri (örn. IP adresi, cihaz bilgisi, istek zamanı) işleyebilir.
+- Reklamların yüklenmesi (Google AdMob)
+- Satın alma ve satın alma geri yükleme işlemleri (Google Play Billing)
+- Uygulama içi güncelleme kontrolü (Google Play In-App Update)
+- Uygulama içi değerlendirme/yorum isteme (Google Play In-App Review)
+- Uygulama içindeki “Gizlilik Politikası” sayfasının GitHub üzerinden görüntülenmesi (WebView)
+
+⚠️ “Gizlilik Politikası” sayfası GitHub üzerinde barındırılan bir dokümanı uygulama içinde (WebView) görüntüler. Bu sayfayı açtığınızda barındırma/altyapı sağlayıcıları (örn. GitHub) standart web sunucu günlükleri kapsamında bazı teknik verileri (örn. IP adresi, cihaz bilgisi, istek zamanı) işleyebilir.
 
 ✅ Alarm ayarlarınız internet gerektirmez ve çevrimdışı çalışır.
 
-✅ Uygulamanın kendi sunucularına kişisel veri göndermez.
+✅ Uygulama, kendi sunucularına kişisel veri göndermez.
 
 ### Üçüncü Taraf Hizmetler
 
-Bu uygulama aşağıdaki Google servislerini kullanabilir:
+Bu uygulama aşağıdaki üçüncü taraf servisleri kullanabilir:
 
-- ✅ **Google AdMob**: Uygulama içi reklamları göstermek için kullanılır.
+- ✅ **Google AdMob (google_mobile_ads)**: Uygulama içi reklamları göstermek için kullanılır.
   - Reklam gösterimleri/tıklamaları ile ilgili ölçümler yapılabilir
   - Cihaz türü, işletim sistemi, IP adresi, yaklaşık konum (IP’den türetilebilir) gibi teknik bilgiler işlenebilir
   - Kişiselleştirilmiş reklamlar için reklam kimliği (Advertising ID) kullanılabilir (cihaz ayarlarından sınırlandırılabilir)
-  - Google'un gizlilik politikası: https://policies.google.com/privacy
+  - Google gizlilik politikası: https://policies.google.com/privacy
 
-- ✅ **Google Play Billing (Satın Alma)**: “Reklamları Kaldır” satın alımını yapmak ve satın alımı geri yüklemek için kullanılır.
+- ✅ **Google Play Billing (in_app_purchase)**: “Reklamları Kaldır” satın alımını yapmak ve satın alımı geri yüklemek için kullanılır.
   - Satın alma işlemleri Google Play üzerinden yürütülür
-  - Satın alma durumunun (satın alındı/geri yüklendi) cihazda saklanması için yerel kayıt tutulur
-  - Google'un gizlilik politikası: https://policies.google.com/privacy
+  - Satın alma durumuna dair basit bir durum bilgisi cihazınızda yerel olarak saklanabilir
+  - Google gizlilik politikası: https://policies.google.com/privacy
+
+- ✅ **Google Play In-App Update (in_app_update)**: Android’de uygulama güncellemelerini kontrol etmek/sunmak için kullanılır.
+  - Bu işlem Google Play servisleri üzerinden yürütülür
+  - Google gizlilik politikası: https://policies.google.com/privacy
+
+- ✅ **Google Play In-App Review (in_app_review)**: Uygulama içi değerlendirme/yorum istemek için kullanılır.
+  - Bu işlem Google Play servisleri üzerinden yürütülür
+  - Google gizlilik politikası: https://policies.google.com/privacy
+
+Diğer hizmetler (uygulamanın kendi içinde):
+- ✅ **WebView (webview_flutter)**: Gizlilik politikası sayfasını uygulama içinde göstermek için
+- ✅ **URL açma (url_launcher)**: tarayıcı/e-posta gibi uygulamaları açmak için
+- ✅ **Paylaşım (share_plus)**: cihazın sistem paylaşım ekranını açmak için
 
 Diğer hizmetler **KULLANILMAZ**:
 
-- ❌ Analitik servisleri (Google Analytics, Firebase, vb.)
-- ❌ Çökme raporu servisleri
+- ❌ Analitik servisleri (Google Analytics, Firebase Analytics vb.)
+- ❌ Çökme raporu servisleri (Crashlytics vb.)
 - ❌ Sosyal medya entegrasyonları
 - ❌ Kullanıcı takip araçları
 
 ### İzinler
 
-Uygulama şu izinleri kullanır:
+Uygulama işlevlerine göre aşağıdaki Android izinlerini kullanır (bazıları Android sürümüne göre değişebilir):
 
-1. **Bildirim İzni**: Alarm zamanı geldiğinde sizi uyarmak için
-2. **Tam Ekran Alarm İzni**: Alarm çaldığında matematik ekranını otomatik açmak için
-3. **Alarm/Zamanlayıcı İzni**: Belirlediğiniz saatlerde alarm kurmak için
-4. **İnternet İzni**: Reklamları yüklemek için
+1. **RECEIVE_BOOT_COMPLETED**: Cihaz yeniden başlatıldığında alarmları tekrar kurabilmek için
+2. **WAKE_LOCK**: Alarm zamanı geldiğinde cihazı uyandırabilmek için
+3. **VIBRATE**: Alarm titreşimini çalıştırabilmek için
+4. **USE_FULL_SCREEN_INTENT**: Alarm çalarken tam ekran alarm arayüzünü gösterebilmek için
+5. **POST_NOTIFICATIONS**: Alarm bildirimlerini gösterebilmek için
+6. **ACTIVITY_RECOGNITION**: “Adım” görevi seçildiğinde adım sayısını okuyabilmek için
+7. **FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK**: Alarm sesi/çalma sırasında arka planda güvenilir çalışabilmek için
+8. **USE_EXACT_ALARM / SCHEDULE_EXACT_ALARM**: Alarmları tam zamanında kurabilmek için
+9. **INTERNET / ACCESS_NETWORK_STATE**: Reklamlar, satın alma işlemleri, güncelleme/yorum akışları ve gizlilik politikası sayfasını görüntülemek için
+10. **MODIFY_AUDIO_SETTINGS**: Alarm sesi/oynatım ayarlarını yönetebilmek için
+11. **SYSTEM_ALERT_WINDOW**: Bazı cihazlarda alarm arayüzünü diğer uygulamaların üstünde gösterebilmek için (sistem ayarlarından yönetilebilir)
 
-Opsiyonel/özelliğe bağlı izinler:
+Dosya/medya erişimi:
+- Özel zil sesi veya duvar kağıdı seçimi gibi durumlarda **sistem dosya seçici** kullanılır; uygulama yalnızca sizin seçtiğiniz dosyaya erişir.
 
-5. **Hareket/Fiziksel Aktivite (Adım sayma) İzni**: “Adım” kapatma görevi seçildiğinde adım sayısını okuyabilmek için (Android: ACTIVITY_RECOGNITION, iOS: Motion & Fitness)
-6. **Dosya Seçme/Medya Erişimi**: Özel zil sesi seçmek istediğinizde sistem dosya seçicisini açmak için (dosya seçimi tamamen sizin kontrolünüzdedir)
+### Kontrol ve Seçimler
 
-**Hafıza (Memory)** ve **Sıra Takibi (Sequence)** görevleri ek bir cihaz izni gerektirmez; yalnızca uygulama içinde çalışır.
-
-Not: Satın alma özelliği kullanıldığında Google Play altyapısı ile iletişim kurulabilir.
-
-Bu izinler yalnızca uygulamanın temel işlevselliği için kullanılır. Alarm ayarlarınız gibi kişisel verileriniz hiçbir zaman internete gönderilmez.
+- Kişiselleştirilmiş reklamları Android ayarlarından sınırlayabilirsiniz (reklam kimliği/kişiselleştirme ayarları).
+- Uygulamanın yerel verilerini temizlemek için Android/iOS’ta “Uygulama verilerini sil” (Clear storage) seçeneğini kullanabilirsiniz.
 
 ### Veri Güvenliği
 
-Tüm verileriniz cihazınızda yerel olarak saklandığı için, veri güvenliği tamamen cihazınızın güvenlik ayarlarına bağlıdır. Uygulamayı kaldırdığınızda tüm veriler otomatik olarak silinir.
+Uygulama verileri cihazınızda yerel olarak saklanır. Veri güvenliği cihazınızın güvenlik ayarlarına bağlıdır. Uygulamayı kaldırdığınızda uygulama depolama alanındaki veriler otomatik olarak silinir.
 
 ### Çocukların Gizliliği
 
-Bu uygulama her yaştan kullanıcı tarafından kullanılabilir. Uygulama kendi sunucularına kişisel veri göndermez.
-
-Ancak uygulamada reklam gösterimi (Google AdMob) bulunabilir. Google, reklam sunumu sırasında kendi politikalarına göre bazı teknik verileri işleyebilir. Çocukların gizliliği hakkında daha fazla bilgi için Google gizlilik politikasını inceleyebilirsiniz: https://policies.google.com/privacy
+Uygulama kendi sunucularına kişisel veri göndermez. Ancak uygulamada reklam gösterimi (Google AdMob) bulunabilir ve Google, reklam sunumu sırasında kendi politikalarına göre bazı teknik verileri işleyebilir. Daha fazla bilgi için Google gizlilik politikasını inceleyebilirsiniz: https://policies.google.com/privacy
 
 ### Değişiklikler
 
-Bu gizlilik politikası gerektiğinde güncellenebilir. Herhangi bir değişiklik durumunda, güncelleme tarihi bu sayfada belirtilecektir.
+Bu gizlilik politikası gerektiğinde güncellenebilir. Değişiklik durumunda güncelleme tarihi bu sayfada belirtilir.
 
 ### İletişim
 
-Gizlilik politikası hakkında sorularınız varsa, lütfen uygulama geliştirici ile iletişime geçin.
+Gizlilik politikası hakkında sorularınız varsa bizimle iletişime geçebilirsiniz.
 
 Destek e-postası: cleveralarmdestek@gmail.com
 
 ---
 
 **Özetle:**
-- ✅ Alarm ayarlarınız tamamen çevrimdışı çalışır
-- ✅ Uygulamanın kendi sunucularına kişisel veriler gönderilmez
-- ✅ Duvar kağıdı (alarm ekranı arka planı) seçiminiz cihazınızda saklanır ve internete yüklenmez
+- ✅ Kendi sunucularımıza kişisel veri gönderilmez
+- ✅ Alarm/görev ayarları cihazınızda yerel kalır
+- ✅ Duvar kağıdı ve seçtiğiniz ses dosyaları internete yüklenmez
 - ⚠️ Reklamlar için Google AdMob kullanılır
-- ⚠️ Reklamları kaldırma satın alımı için Google Play Billing kullanılabilir
-- ✅ Tüm alarm verileriniz sadece cihazınızda
-- ✅ Adım görevi verileri cihazda işlenir
-- ✅ Gizliliğinizi korumaya odaklanır
+- ⚠️ Satın alma/güncelleme/yorum akışları Google Play servisleriyle çalışır
 
-**Gönül rahatlığıyla kullanabilirsiniz!** 🔒
+**Gönül rahatlığıyla kullanabilirsiniz!**
