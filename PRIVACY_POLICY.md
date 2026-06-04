@@ -1,6 +1,6 @@
 # Gizlilik Politikası
 
-**Son Güncelleme: 1 Mart 2026**
+**Son Güncelleme: 04 Haziran 2026**
 
 ## CleverAlarm Uygulaması
 
@@ -26,6 +26,7 @@ Uygulamanın kullandığı ve **cihazınızda yerel olarak** saklanan veriler (u
 - ✅ Alarm aktif/pasif durumları
 - 🛒 “Reklamları kaldır” satın alma durum bilgisi (satın alındı/geri yüklendi)
 - 🖼️ Alarm ekranı duvar kağıdı tercihi (seçilen duvar kağıdının dosya yolu veya uygulama içi hazır görsel seçimi)
+- 🖼️ Eşya Avı görevi
 
 Bu bilgilerin tamamı yalnızca cihazınızda (örn. SharedPreferences ve uygulama içi yerel dosyalar) saklanır.
 
@@ -82,6 +83,25 @@ Bu uygulama aşağıdaki üçüncü taraf servisleri kullanabilir:
   - Bu işlem Google Play servisleri üzerinden yürütülür
   - Google gizlilik politikası: https://policies.google.com/privacy
 
+  
+- ✅ **Google Analytics for Firebase**
+  Veri Analitiği ve Reklam Performansı Takibi
+    Uygulamamızın performansını ölçmek, kullanıcı deneyimini iyileştirmek ve uygulama içi reklamların teknik olarak doğru çalışıp çalışmadığını kontrol etmek amacıyla Google Analytics for Firebase aracını kullanıyoruz.
+
+  **Hangi Verileri Takip Ediyoruz?**
+    Bu araç vasıtasıyla kesinlikle kişisel kimlik bilgileriniz (isim, e-posta, telefon vb.) veya hassas verileriniz toplanmaz. Sadece aşağıdaki anonim ve istatistiksel veriler işlenir:
+
+  - Kullanım İstatistikleri: Uygulama içi tıklamalar, görüntülenen sayfalar/ekranlar ve oturum süresi gibi genel etkileşim verileri.
+
+  - Reklam Performans Metrikleri: Uygulama içindeki reklamların ne kadar istek (request) aldığı, kaç kez görüntülendiği (impression) ve teknik olarak başarıyla yüklenip yüklenmediğine dair anonim veriler.
+
+  - Reklam sisteminin işleyişi ve benzersiz gösterimlerin sayılabilmesi için cihazınızın anonim reklam kimliği teknik olarak kullanılabilir.
+
+  **Kullanım Amacı:**
+    Bu veriler tamamen anonim (isimsiz) olarak toplanır ve yalnızca uygulamamızın hangi bölümlerinin daha çok kullanıldığını anlamak, hataları gidermek ve reklam sisteminin teknik olarak kararlı çalışmasını sağlamak amacıyla kullanılır. Verileriniz hiçbir şekilde üçüncü şahıslara satılmaz veya ticari olarak hedeflenmiş reklamcılık dışı amaçlarla paylaşılmaz.
+
+  - Google gizlilik politikası: https://policies.google.com/privacy
+
 Diğer hizmetler (uygulamanın kendi içinde):
 - ✅ **WebView (webview_flutter)**: Gizlilik politikası sayfasını uygulama içinde göstermek için
 - ✅ **URL açma (url_launcher)**: tarayıcı/e-posta gibi uygulamaları açmak için
@@ -89,7 +109,6 @@ Diğer hizmetler (uygulamanın kendi içinde):
 
 Diğer hizmetler **KULLANILMAZ**:
 
-- ❌ Analitik servisleri (Google Analytics, Firebase Analytics vb.)
 - ❌ Çökme raporu servisleri (Crashlytics vb.)
 - ❌ Sosyal medya entegrasyonları
 - ❌ Kullanıcı takip araçları
