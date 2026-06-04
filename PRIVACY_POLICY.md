@@ -22,11 +22,13 @@ Uygulamanın kullandığı ve **cihazınızda yerel olarak** saklanan veriler (u
 - 🧠 Hafıza (Memory) görevi ayarları (örn. eş/kart sayısı)
 - 🔁 Sıra Takibi (Sequence) görevi ayarları (örn. tur sayısı, sıra uzunluğu)
 - 🚶 Adım görevi ayarları (örn. hedef adım sayısı)
+- 🖼️ Eşya Avı görevi: Bu görev için kamera görüntüsü tamamen cihaz üzerinde (on-device) anlık olarak işlenir; kesinlikle kaydedilmez, internete yüklenmez veya üçüncü taraflarla paylaşılmaz.
+- 📊 Barkod/QR Kod Görevleri : Bu görev için kamera görüntüsü tamamen cihaz üzerinde (on-device) anlık olarak işlenir; kesinlikle kaydedilmez, internete yüklenmez veya üçüncü taraflarla paylaşılmaz.
 - 🎨 Görünüm tercihi (karanlık/aydınlık tema)
 - ✅ Alarm aktif/pasif durumları
 - 🛒 “Reklamları kaldır” satın alma durum bilgisi (satın alındı/geri yüklendi)
 - 🖼️ Alarm ekranı duvar kağıdı tercihi (seçilen duvar kağıdının dosya yolu veya uygulama içi hazır görsel seçimi)
-- 🖼️ Eşya Avı görevi
+
 
 Bu bilgilerin tamamı yalnızca cihazınızda (örn. SharedPreferences ve uygulama içi yerel dosyalar) saklanır.
 
@@ -128,6 +130,7 @@ Uygulama işlevlerine göre aşağıdaki Android izinlerini kullanır (bazılar�
 9. **INTERNET / ACCESS_NETWORK_STATE**: Reklamlar, satın alma işlemleri, güncelleme/yorum akışları ve gizlilik politikası sayfasını görüntülemek için
 10. **MODIFY_AUDIO_SETTINGS**: Alarm sesi/oynatım ayarlarını yönetebilmek için
 11. **SYSTEM_ALERT_WINDOW**: Bazı cihazlarda alarm arayüzünü diğer uygulamaların üstünde gösterebilmek için (sistem ayarlarından yönetilebilir)
+12. **CAMERA**: "Eşya Avı" görevinde hedef nesneyi algılayabilmek ve "Barkod/QR Kod" görevinde kodu taratıp alarmı kapatabilmek için doğrudan kamera erişimi sağlar. Görüntüler sadece anlık tarama amaçlı kullanılır, hiçbir şekilde kaydedilmez veya paylaşılmaz.
 
 Dosya/medya erişimi:
 - Özel zil sesi veya duvar kağıdı seçimi gibi durumlarda **sistem dosya seçici** kullanılır; uygulama yalnızca sizin seçtiğiniz dosyaya erişir.
