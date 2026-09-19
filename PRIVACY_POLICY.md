@@ -1,6 +1,6 @@
 # Gizlilik Politikası
 
-**Son Güncelleme: 05 Temmuz 2026**
+**Son Güncelleme: 19 Eylül 2026**
 
 ## CleverAlarm Uygulaması
 
@@ -8,7 +8,7 @@
 
 CleverAlarm uygulaması, gizliliğinize önem verir. Uygulamanın temel alarm ve görev (matematik, hafıza, sıra, adım vb.) özellikleri büyük ölçüde çevrimdışı çalışır. Uygulama **kendi sunucularımıza** kişisel verilerinizi göndermez.
 
-Bu uygulama bazı özellikler için üçüncü taraf servisler (ör. Google AdMob, Google Play satın alma/güncelleme/yorum) kullanabilir. Bu servisler kendi gizlilik politikaları kapsamında **teknik veriler** işleyebilir (aşağıda).
+Bu uygulama bazı özellikler için üçüncü taraf servisler (ör. Google AdMob, Unity Ads aracılığı, Firebase Analytics/Crashlytics/Remote Config, Google Play satın alma/güncelleme/yorum) kullanabilir. Bu servisler kendi gizlilik politikaları kapsamında **teknik veriler** (cihaz veya diğer kimlikler dahil) işleyebilir ve Google / reklam ortaklarıyla paylaşabilir (aşağıda).
 
 ### Veri Toplama ve Yerel Saklama
 
@@ -26,7 +26,9 @@ Uygulamanın kullandığı ve **cihazınızda yerel olarak** saklanan veriler (u
 - ✅ Alarm aktif/pasif durumları
 - 🛒 “Reklamları kaldır” satın alma durum bilgisi (satın alındı/geri yüklendi)
 - 🖼️ Alarm ekranı duvar kağıdı tercihi (seçilen duvar kağıdının dosya yolu veya uygulama içi hazır görsel seçimi)
-- 🖼️ Eşya Avı görevi
+- 🖼️ Eşya Avı görevi (seçilen nesne listesi)
+- 📷 QR / barkod görevi (kayıtlı kod bilgisi)
+- 🛡️ Kapanma koruması açık/kapalı tercihi
 
 Bu bilgilerin tamamı yalnızca cihazınızda (örn. SharedPreferences ve uygulama içi yerel dosyalar) saklanır.
 
@@ -48,7 +50,10 @@ Bu ses dosyaları uygulama tarafından internete yüklenmez.
 
 ⚠️ Bu uygulama aşağıdaki durumlarda internet bağlantısı kullanabilir:
 
-- Reklamların yüklenmesi (Google AdMob)
+- Reklamların yüklenmesi (Google AdMob ve aracılık ağları, örn. Unity Ads)
+- Kullanım ölçümü (Google Analytics for Firebase)
+- Çökme/hata raporlama (Firebase Crashlytics)
+- Uzaktan yapılandırma (Firebase Remote Config)
 - Satın alma ve satın alma geri yükleme işlemleri (Google Play Billing)
 - Uygulama içi güncelleme kontrolü (Google Play In-App Update)
 - Uygulama içi değerlendirme/yorum isteme (Google Play In-App Review)
@@ -64,11 +69,13 @@ Bu ses dosyaları uygulama tarafından internete yüklenmez.
 
 Bu uygulama aşağıdaki üçüncü taraf servisleri kullanabilir:
 
-- ✅ **Google AdMob (google_mobile_ads)**: Uygulama içi reklamları göstermek için kullanılır.
+- ✅ **Google AdMob (google_mobile_ads) ve reklam aracılığı (Unity Ads)**: Uygulama içi reklamları göstermek için kullanılır.
   - Reklam gösterimleri/tıklamaları ile ilgili ölçümler yapılabilir
   - Cihaz türü, işletim sistemi, IP adresi, yaklaşık konum (IP’den türetilebilir) gibi teknik bilgiler işlenebilir
-  - Kişiselleştirilmiş reklamlar için reklam kimliği (Advertising ID) kullanılabilir (cihaz ayarlarından sınırlandırılabilir)
+  - Reklam ve ölçüm için **cihaz veya diğer kimlikler** (ör. Android Reklam Kimliği / Advertising ID, uygulama örnek kimliği) toplanabilir ve Google ile reklam ortaklarına **paylaşılabilir**
+  - Kişiselleştirilmiş reklamları cihaz ayarlarından sınırlayabilirsiniz; bu durumda reklam yine gösterilebilir ama daha az kişiselleştirilir
   - Google gizlilik politikası: https://policies.google.com/privacy
+  - Unity gizlilik politikası: https://unity.com/legal/privacy-policy
 
 - ✅ **Google Play Billing (in_app_purchase)**: “Reklamları Kaldır” satın alımını yapmak ve satın alımı geri yüklemek için kullanılır.
   - Satın alma işlemleri Google Play üzerinden yürütülür
@@ -85,28 +92,25 @@ Bu uygulama aşağıdaki üçüncü taraf servisleri kullanabilir:
 
   
 - ✅ **Google Analytics for Firebase**
-  Veri Analitiği ve Reklam Performansı Takibi
-    Uygulamamızın performansını ölçmek, kullanıcı deneyimini iyileştirmek ve uygulama içi reklamların teknik olarak doğru çalışıp çalışmadığını kontrol etmek amacıyla Google Analytics for Firebase aracını kullanıyoruz.
+  Uygulama performansını ölçmek, hangi ekranların kullanıldığını anlamak ve reklamların teknik olarak çalışıp çalışmadığını görmek için kullanılır.
 
-  **Hangi Verileri Takip Ediyoruz?**
-    Bu araç vasıtasıyla kesinlikle kişisel kimlik bilgileriniz (isim, e-posta, telefon vb.) veya hassas verileriniz toplanmaz. Sadece aşağıdaki anonim ve istatistiksel veriler işlenir:
+  İsim, e-posta veya telefon toplanmaz. İşlenenler kullanım olayları (ekran, tıklama, oturum) ve reklam istek/gösterim gibi teknik ölçümlerdir. Bu ölçümler **cihaz veya diğer kimlikler** (ör. uygulama örnek kimliği, reklam kimliği) ile ilişkilendirilebilir ve Google’a aktarılabilir.
 
-  - Kullanım İstatistikleri: Uygulama içi tıklamalar, görüntülenen sayfalar/ekranlar ve oturum süresi gibi genel etkileşim verileri.
-
-  - Reklam Performans Metrikleri: Uygulama içindeki reklamların ne kadar istek (request) aldığı, kaç kez görüntülendiği (impression) ve teknik olarak başarıyla yüklenip yüklenmediğine dair anonim veriler.
-
-  - Reklam sisteminin işleyişi ve benzersiz gösterimlerin sayılabilmesi için cihazınızın anonim reklam kimliği teknik olarak kullanılabilir.
-
-  **Kullanım Amacı:**
-    Bu veriler tamamen anonim (isimsiz) olarak toplanır ve yalnızca uygulamamızın hangi bölümlerinin daha çok kullanıldığını anlamak, hataları gidermek ve reklam sisteminin teknik olarak kararlı çalışmasını sağlamak amacıyla kullanılır. Verileriniz hiçbir şekilde üçüncü şahıslara satılmaz veya ticari olarak hedeflenmiş reklamcılık dışı amaçlarla paylaşılmaz.
+  Amaç: analiz ve reklam/ölçüm. Verilerinizi satmayız. Google, kendi gizlilik politikasına göre bu teknik verileri işleyebilir.
 
   - Google gizlilik politikası: https://policies.google.com/privacy
+
+- ✅ **Firebase Crashlytics**: Üretim (release) sürümlerinde çökme ve kritik hataları raporlamak için (debug/test sürümlerinde varsayılan olarak kapalıdır).
+  - Kilitlenme günlükleri, cihaz modeli, işletim sistemi sürümü ve uygulama sürümü gibi tanılama bilgileri gönderilebilir
+  - Kurulum/cihaz kimliği benzeri teknik kimlikler kullanılabilir
+  - Google gizlilik politikası: https://policies.google.com/privacy
+
+- ✅ **Firebase Remote Config**: Uygulama ayarlarını uzaktan güncellemek için (ör. reklam/akış bayrakları). Teknik uygulama kimliği Google’a gidebilir.
 
 Diğer hizmetler (uygulamanın kendi içinde):
 - ✅ **WebView (webview_flutter)**: Gizlilik politikası sayfasını uygulama içinde göstermek için
 - ✅ **URL açma (url_launcher)**: tarayıcı/e-posta gibi uygulamaları açmak için
 - ✅ **Paylaşım (share_plus)**: cihazın sistem paylaşım ekranını açmak için (tanı loglarını destek ekibine göndermek dahil)
-- ✅ **Firebase Crashlytics**: Üretim (release) sürümlerinde uygulama çökmelerini ve kritik hataları anonim olarak raporlamak için (debug/test sürümlerinde varsayılan olarak kapalıdır)
 - ✅ **Yerel tanı günlüğü**: Sorun giderme için cihazda geçici olarak tutulan teknik log dosyası; yalnızca siz “Tanı loglarını gönder” seçeneğini kullanırsanız paylaşılır
 
 Diğer hizmetler **KULLANILMAZ**:
@@ -126,9 +130,11 @@ Uygulama işlevlerine göre aşağıdaki Android izinlerini kullanır (bazılar�
 6. **ACTIVITY_RECOGNITION**: “Adım” görevi seçildiğinde adım sayısını okuyabilmek için
 7. **FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK**: Alarm sesi/çalma sırasında arka planda güvenilir çalışabilmek için
 8. **USE_EXACT_ALARM / SCHEDULE_EXACT_ALARM**: Alarmları tam zamanında kurabilmek için
-9. **INTERNET / ACCESS_NETWORK_STATE**: Reklamlar, satın alma işlemleri, güncelleme/yorum akışları ve gizlilik politikası sayfasını görüntülemek için
+9. **INTERNET / ACCESS_NETWORK_STATE**: Reklamlar, analiz, çökme raporu, uzaktan yapılandırma, satın alma, güncelleme/yorum ve gizlilik politikası sayfası için
 10. **MODIFY_AUDIO_SETTINGS**: Alarm sesi/oynatım ayarlarını yönetebilmek için
 11. **SYSTEM_ALERT_WINDOW**: Bazı cihazlarda alarm arayüzünü diğer uygulamaların üstünde gösterebilmek için (sistem ayarlarından yönetilebilir)
+12. **CAMERA**: QR / barkod tarama ve Eşya Avı (nesne tanıma) görevleri için. Kamera görüntüsü bu görevler sırasında cihazda işlenir; uygulamanın kendi sunucusuna yüklenmez
+13. **Erişilebilirlik hizmeti (isteğe bağlı)**: Yalnızca “Kapanma koruması” açıksa ve alarm / uyanma görevi / uyanma kontrolü sırasında güç menüsünü kapatmak için. Alarm yokken çalışmaz. Bu hizmet aracılığıyla kişisel veri toplanmaz, saklanmaz veya üçüncü taraflarla paylaşılmaz
 
 Dosya/medya erişimi:
 - Özel zil sesi veya duvar kağıdı seçimi gibi durumlarda **sistem dosya seçici** kullanılır; uygulama yalnızca sizin seçtiğiniz dosyaya erişir.
@@ -159,10 +165,10 @@ Destek e-postası: cleveralarmdestek@gmail.com
 ---
 
 **Özetle:**
-- ✅ Kendi sunucularımıza kişisel veri gönderilmez
+- ✅ Kendi sunucularımıza kişisel veri (isim, e-posta, alarm içeriği) gönderilmez
 - ✅ Alarm/görev ayarları cihazınızda yerel kalır
-- ✅ Duvar kağıdı ve seçtiğiniz ses dosyaları internete yüklenmez
-- ⚠️ Reklamlar için Google AdMob kullanılır
+- ✅ Duvar kağıdı, kamera görüntüsü ve seçtiğiniz ses dosyaları internete yüklenmez
+- ⚠️ Reklam, analiz ve çökme raporu için Google (AdMob, Analytics, Crashlytics) ve reklam aracılığı cihaz kimliği işleyebilir ve paylaşabilir
 - ⚠️ Satın alma/güncelleme/yorum akışları Google Play servisleriyle çalışır
 
 **Gönül rahatlığıyla kullanabilirsiniz!**
